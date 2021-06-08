@@ -1,0 +1,64 @@
+table, tr, td {
+    border: 1px solid black;
+}
+td {
+    border-radius: 5px;
+    width:50px;
+    height: 50px;
+
+}
+.calc {
+    display: block;
+    width:fit-content;
+    align-self: center;
+    margin: auto;
+    padding: 6px;
+    border-radius: 7px;
+    background-color: #2E3407;
+}
+
+.numbers {
+    background-color: #707793;
+    color:whitesmoke;
+}
+
+.operator, #AC, #C {
+    background-color:#43454C;
+    color:white;
+}
+
+.keysCalc {
+    border-style: solid;
+    border: 1px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.display {
+    background-color: #37474f;
+    ;
+    width: 200px;
+    height: 100px;
+}
+td:hover {
+    transform: scale(1.1);
+}
+
+.displayData:hover {
+    transform: scale(1);
+}
+#AC:hover, #C:hover {
+    background-color: #faa6a0;
+}
+
+.operator:hover {
+    background-color: #6d707d;
+}
+
+#result:hover {
+    background-color: teal;
+}
+
+.numbers:hover {
+    background-color: #8c94b8;
+}
