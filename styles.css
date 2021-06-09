@@ -1,6 +1,13 @@
 table, tr, td {
     border: 1px solid black;
 }
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: rgb(149, 237, 240);
+}
 td {
     border-radius: 5px;
     width:50px;
@@ -21,8 +28,12 @@ td {
     background-color: #707793;
     color:whitesmoke;
 }
-
-.operator, #AC, #C {
+.displayData {
+    text-align: end;
+    padding: 10px;
+    color: #becbd1;
+}
+.operator, .AC, .C {
     background-color:#43454C;
     color:white;
 }
@@ -36,7 +47,6 @@ td {
 }
 .display {
     background-color: #37474f;
-    ;
     width: 200px;
     height: 100px;
 }
@@ -47,7 +57,7 @@ td:hover {
 .displayData:hover {
     transform: scale(1);
 }
-#AC:hover, #C:hover {
+.AC:hover, .C:hover {
     background-color: #faa6a0;
 }
 
