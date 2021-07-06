@@ -1,11 +1,14 @@
 const calc = document.querySelector(".calc");
 const display = document.querySelector(".displayData");
 
+// added the keyput input functionality
 document.addEventListener('keydown', (e) => {
+    //regexp to match numbers
     if(e.key.match(/[0-9\.]/))
     {
         display.innerHTML+=e.key;
     }
+    //regexp to match operators
     else if(e.key.match(/[\+\*\-\/\=\%]/))
     {
         result();
@@ -15,6 +18,7 @@ document.addEventListener('keydown', (e) => {
 })
 
 calc.addEventListener('click', (e)=> {
+    // display screen of the calculator which concats the numbers and operators untill =/AC is pressed
     if(e.path[0].className==="numbers")
     {
         display.innerHTML+=e.path[0].innerHTML; 
@@ -60,7 +64,9 @@ const modul = (arr) =>
     return parseFloat(arr[0])%parseFloat(arr[1]);
 }
 
+// Using regexp to split the numbers from and separate the constructors
 const result=() => {
+    // Using regexp to split the numbers from and separate the constructors
     const nums = display.innerHTML.split(/[^0-9\.]/);
     if(nums.length===1)
     {
